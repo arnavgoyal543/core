@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Articles - Rodent Gazette</title>
+    <link rel="stylesheet" href="articles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Rodent Gazette</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="articles.html" class="active">Articles</a></li>
+                <li><a href="quiz.html">Quizzes</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Articles Section -->
+    <section id="articles-page">
+        <div class="articles-container">
+            <h2>Latest Articles</h2>
+            <article class="article-item">
+                <h3>The Great Cheese Heist</h3>
+                <p>
+                    In this thrilling adventure, Geronimo Stilton uncovers the mystery behind a massive cheese robbery at the Mouseford Academy...
+                </p>
+                <a href="#" class="read-more" data-article="cheese-heist">Read More</a>
+            </article>
+
+            <article class="article-item">
+                <h3>Exploring New Mouse City</h3>
+                <p>
+                    Take a tour through the bustling streets of New Mouse City, the heart of the rodent world. Discover iconic landmarks...
+                </p>
+                <a href="#" class="read-more" data-article="mouse-city">Read More</a>
+            </article>
+
+            <article class="article-item">
+                <h3>The Science of Cheese-Making</h3>
+                <p>
+                    Ever wonder how cheese is made? This article dives into the science behind the cheese-making process, exploring fermentation...
+                </p>
+                <a href="#" class="read-more" data-article="cheese-making">Read More</a>
+            </article>
+        </div>
+    </section>
+
+    <!-- Article Content Section (Initially hidden) -->
+    <section id="article-content" style="display:none;">
+        <div class="content-container">
+            <h2 id="article-title"></h2>
+            <p id="article-body"></p>
+            <a href="#" id="back-to-articles">Back to Articles</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Rodent Gazette. All rights reserved.</p>
+    </footer>
+
+    <script src="articles.js"></script>
+</body>
+</html>

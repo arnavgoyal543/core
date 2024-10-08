@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rodent Gazette Quiz</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Rodent Gazette</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="articles.html">Articles</a></li>
+                <li><a href="quiz.html" class="active">Quizzes</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="quiz-page">
+        <div class="quiz-container">
+            <h2>Which Geronimo Stilton Character Are You?</h2>
+            <div id="quiz">
+                <p id="question"></p>
+                <div id="options"></div>
+                <button id="nextBtn" onclick="nextQuestion()">Next</button>
+            </div>
+            <div id="result" class="hidden">
+                <h3>Your Quiz Result:</h3>
+                <p id="result-text"></p>
+                <button id="restartBtn" onclick="restartQuiz()">Restart Quiz</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Rodent Gazette. All rights reserved.</p>
+    </footer>
+
+    <script src="quiz.js"></script>
+</body>
+</html>
